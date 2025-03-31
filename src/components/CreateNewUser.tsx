@@ -29,8 +29,8 @@ export function CreateNewUser() {
     }
     return (
         <Card className="text-white">
-            <p>Hey</p>
-            <form onSubmit={handleSubmit}>
+            <p>Create User</p>
+            <form onSubmit={handleSubmit} className="space-y-2 mt-4">
                 <TextInput name="name" placeholder="Name" />
                 <TextInput name="email" placeholder="Email" />
                 <TextInput name="github" placeholder="Github" />

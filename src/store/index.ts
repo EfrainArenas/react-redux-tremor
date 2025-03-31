@@ -22,7 +22,7 @@ const syncWithDatabaseMiddleware: Middleware = store => next => action => {
 
     if (type === 'users/deleteUserById') {
         const userToRemove = previousState.users.find(user => user.id == payload)
-        fetch(`https://jsonplaceholder.typicode.asdasd/users/${payload}`, {
+        fetch(`https://jsonplaceholder.typicode.com/users/${payload}`, {
             method: 'DELETE'
         })
             .then(res => { if (res.ok) toast.success('Success!') })

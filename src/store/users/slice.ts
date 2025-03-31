@@ -1,4 +1,6 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
+import { id } from "date-fns/locale";
+import { emit } from "process";
 
 export interface User {
     name: string;
@@ -21,10 +23,37 @@ const DEFAULT_STATE = [
     },
     {
         id: "2",
-        name: "Henry Cavill",
-        email: "henrycavill@outlook.com",
-        github: "HenryCavill",
+        name: "Batman",
+        email: "batman@outlook.com",
+        github: "Batman",
     },
+    {
+        id: "4",
+        name: "Superman",
+        email: "Superman@outlook.com",
+        github: "Superman",
+    },
+    {
+        id: "5",
+        name: "Harry Potter",
+        email: "harrypotter@outlook.com",
+        github: "HarryPotter",
+    },
+    {
+        id: "6",
+        name: "Peter Parker",
+        email: "peterparker@outlook.com",
+        github: "PeterParker",
+    },//create ten more
+    {
+        id: "7",
+        name: "Clark Kent",
+        email: "clarkkent@outlook.com",
+        github: "ClarkKent",
+
+    }
+    
+
 ];
 //FUNCIONAMIENTO:
 // 1. Se obtiene el estado persistido del localStorage

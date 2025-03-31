@@ -27,7 +27,7 @@ export function ListOfUsers() {
                 <TableCaption>Users. {users.length}</TableCaption>
                 <TableHead>
                     <TableRow>
-                        <TableHeaderCell>Id</TableHeaderCell>
+                        {/* <TableHeaderCell>Id</TableHeaderCell> */}
                         <TableHeaderCell>Name</TableHeaderCell>
                         <TableHeaderCell>Email</TableHeaderCell>
                         <TableHeaderCell>Actions</TableHeaderCell>
@@ -36,8 +36,8 @@ export function ListOfUsers() {
                 <TableBody>
                     {users.map((item) => (
                         <TableRow key={item.id}>
-                            <TableCell>{item.id}</TableCell>
-                            <TableCell className="flex items-center justify-center space-x-2">
+                            {/* <TableCell>{item.id}</TableCell> */}
+                            <TableCell className="flex items-center justify-start space-x-2 mr-12">
                                 <img className="w-10" src={`https://unavatar.io/github/${item.github}`} alt={item.name} />
                                 <p>
                                     {item.name}
