@@ -1,6 +1,4 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { id } from "date-fns/locale";
-import { emit } from "process";
 
 export interface User {
     name: string;

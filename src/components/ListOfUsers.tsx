@@ -3,7 +3,6 @@ import {
     TableBody,
     TableCaption,
     TableCell,
-    TableFoot,
     TableHead,
     TableHeaderCell,
     TableRoot,
